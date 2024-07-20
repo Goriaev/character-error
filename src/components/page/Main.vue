@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <div class="w-5/6 mx-auto flex pt-10 gap-10">
+    <div class="w-5/6 mx-auto flex pt-10 gap-10 flex-col md:flex-row">
       <div class="">
         <h1 class="text-3xl mb-5">Обо мне</h1>
         <p>
@@ -9,7 +9,7 @@
           художником, музыкантом, и многом другим. Я расту и развиваюсь.
         </p>
       </div>
-      <div class="w-3/5">
+      <div class="w-full md:w-3/5">
         <img
           src="https://masterpiecer-images.s3.yandex.net/7ae497eb878511eeb60abeb332dff282:upscaled"
           alt=""

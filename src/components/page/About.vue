@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <div class="w-5/6 mx-auto flex pt-10 gap-10">
+    <div class="w-5/6 mx-auto flex pt-10 gap-10 flex-col md:flex-row">
       <div class="">
         <h1 class="text-3xl mb-5">about</h1>
         <p>
@@ -11,7 +11,7 @@
           decision.
         </p>
       </div>
-      <div class="w-3/5">
+      <div class="w-full md:w-3/5">
         <img
           src="https://images.hdqwalls.com/wallpapers/mountain-scenery-morning-sun-rays-4k-kf.jpg"
           alt=""
