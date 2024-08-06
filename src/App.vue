@@ -1,42 +1,112 @@
 <template>
-  <header
-    class="md:h-10 mb-5 bg-black flex items-center py-10 px-20 gap-10 justify-start flex-col md:flex-row"
-  >
-    <router-link
-      to="/"
-      class="text-black text-xl px-2 py-1 bg-white rounded-2xl hover:bg-slate-800 hover:text-white transition-all duration-1000"
-      >Главная</router-link
-    >
+  <div class="fixed top-0">
+    <div class="flex w-screen justify-between px-10 py-5">
+      <div class="flex flex-auto">
+        <img src="./assets/search.svg" alt="" class="h-8 w-8" />
+      </div>
+      <div class="flex flex-1">
+        <p class="font-semibold text-3xl">Feeds</p>
+      </div>
+      <div class="flex flex-none h-8 gap-8">
+        <img src="./assets/something.svg" alt="" class="w-8" />
+        <img src="./assets/notification.svg" alt="" />
+      </div>
+    </div>
+  </div>
 
-    <router-link
-      to="/about"
-      class="text-black text-xl px-2 py-1 bg-white rounded-2xl hover:bg-slate-800 hover:text-white transition-all duration-1000"
-      >Обо мне</router-link
-    >
+  <header class="fixed bottom-0">
+    <div class="flex justify-around w-screen h-16 items-center bg-white">
+      <router-link
+        to="/"
+        class="h-7 w-7 flex flex-col justify-center items-center"
+      >
+        <img
+          src="./assets/house.svg"
+          alt=""
+          class="w-full h-full object-contain hover:-translate-y-1 hover:transition-all"
+        />
+        <p class="text-sm text-center">Main</p>
+      </router-link>
+      <router-link
+        to="/about"
+        class="h-7 w-7 flex flex-col justify-center items-center"
+      >
+        <img
+          src="./assets/user.svg"
+          alt=""
+          class="w-full h-full object-contain hover:-translate-y-1 hover:transition-all"
+        />
+        <p class="text-sm text-center">About</p>
+      </router-link>
+      <router-link
+        to="/character"
+        class="h-8 w-8 flex flex-col justify-center items-center"
+      >
+        <img
+          src="./assets/brawlers.svg"
+          alt=""
+          class="w-full h-full object-contain hover:-translate-y-1 hover:transition-all"
+        />
+        <p class="text-sm text-center">Characters</p>
+      </router-link>
+      <!-- <router-link
+        to="/describe"
+        class="h-7 w-7 flex flex-col justify-center items-center"
+      >
+        <img
+          src="./assets/describe.svg"
+          alt=""
+          class="w-full h-full object-contain hover:-translate-y-1 hover:transition-all"
+        />
+        <p class="text-sm text-center">Describe</p>
+      </router-link>
+      <router-link
+        to="/news"
+        class="h-7 w-7 flex flex-col justify-center items-center"
+      >
+        <img
+          src="./assets/news.svg"
+          alt=""
+          class="w-full h-full object-contain hover:-translate-y-1 hover:transition-all"
+        />
+        <p class="text-sm text-center">News</p>
+      </router-link>
+      <router-link
+        to="/flexbox"
+        class="h-7 w-7 flex flex-col justify-center items-center"
+      >
+        <img
+          src="./assets/trash.svg"
+          alt=""
+          class="w-full h-full object-contain hover:-translate-y-1 hover:transition-all"
+        />
+        <p class="text-sm text-center">Trash</p>
+      </router-link>
 
-    <router-link
-      to="/character"
-      class="text-black text-xl px-2 py-1 bg-white rounded-2xl hover:bg-slate-800 hover:text-white transition-all duration-1000"
-      >персонажи
-    </router-link>
+      <router-link
+        to="/work"
+        class="h-7 w-7 flex flex-col justify-center items-center"
+      >
+        <img
+          src="./assets/work.svg"
+          alt=""
+          class="w-full h-full object-contain hover:-translate-y-1 hover:transition-all"
+        />
+        <p class="text-sm text-center">Work</p>
+      </router-link> -->
 
-    <router-link
-      to="/describe"
-      class="text-black text-xl px-2 py-1 bg-white rounded-2xl hover:bg-slate-800 hover:text-white transition-all duration-1000"
-      >Описание</router-link
-    >
-
-    <router-link
-      to="/news"
-      class="text-black text-xl px-2 py-1 bg-white rounded-2xl hover:bg-slate-800 hover:text-white transition-all duration-1000"
-      >Новости</router-link
-    >
-
-    <router-link
-      to="/flexbox"
-      class="text-black text-xl px-2 py-1 bg-white rounded-2xl hover:bg-slate-800 hover:text-white transition-all duration-1000"
-      >Flex Box</router-link
-    >
+      <router-link
+        to="/everything"
+        class="h-7 w-7 flex flex-col justify-center items-center"
+      >
+        <img
+          src="./assets/everything.svg"
+          alt=""
+          class="w-full h-full object-contain hover:-translate-y-1 hover:transition-all"
+        />
+        <p class="text-sm text-center">Everything</p>
+      </router-link>
+    </div>
   </header>
   <main>
     <router-view></router-view>
