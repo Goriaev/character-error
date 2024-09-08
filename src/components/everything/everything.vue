@@ -36,6 +36,24 @@
           <p class="ml-3">tailwindconfig</p>
         </div>
       </router-link>
+
+      <router-link to="/calc">
+        <div class="h-10 w-full border border-green-600 flex items-center">
+          <p class="ml-3">Calc</p>
+        </div>
+      </router-link>
+
+      <router-link to="/inputs">
+        <div class="h-10 w-full border border-green-600 flex items-center">
+          <p class="ml-3">Inputs</p>
+        </div>
+      </router-link>
+
+      <router-link to="/notes">
+        <div class="h-10 w-full border border-green-600 flex items-center">
+          <p class="ml-3">Notes</p>
+        </div>
+      </router-link>
     </div>
   </div>
 </template>

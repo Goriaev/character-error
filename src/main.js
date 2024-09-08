@@ -12,6 +12,9 @@ import Work from "./components/page/work/Work.vue";
 import Everything from "./components/everything/everything.vue";
 import Soccer from "./components/page/soccer/Soccer.vue";
 import Tailwindconfig from "./components/page/tailwindconfig/tailwindconfig.vue";
+import Calc from "./components/page/calc/calc.vue";
+import Inputs from "./components/page/inputs/inputs.vue";
+import Notes from "./components/page/notes/notes.vue";
 
 const router = createRouter({
   routes: [
@@ -25,6 +28,9 @@ const router = createRouter({
     { path: "/work", component: Work },
     { path: "/soccer", component: Soccer },
     { path: "/tailwindconfig", component: Tailwindconfig },
+    { path: "/calc", component: Calc },
+    { path: "/inputs", component: Inputs },
+    { path: "/notes", component: Notes },
   ],
   history: createWebHistory(),
 });

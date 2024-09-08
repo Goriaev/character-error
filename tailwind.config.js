@@ -2,18 +2,19 @@
 export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
-    colors: {
-      black: "#000000",
-      red: "#FF0000",
-      green: "#2BFF00",
-      purple: "#8000FF",
-      pink: "#F700FF",
-      yellow: "#E6FF00",
-      blue: "#00BCFF",
-      brown: "#331900",
-      orange: "#FF6600",
-      darkblue: "#001AFF",
+    extend: {
+      colors: {
+        black: "#000000",
+        red: "#FF0000",
+        green: "#2BFF00",
+        purple: "#8000FF",
+        pink: "#F700FF",
+        yellow: "#E6FF00",
+        blue: "#00BCFF",
+        brown: "#331900",
+        orange: "#FF6600",
+        darkblue: "#001AFF",
+      },
 
       myBlack: {
         100: "#000000",
