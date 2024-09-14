@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="w-full mt-10">
     <div class="w-4/5 mx-auto pt-5 flex gap-5 flex-col">
       <router-link to="/describe">
         <div class="h-10 w-full border border-green-600 flex items-center">
